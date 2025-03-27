@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: tokens_near_fungible
+    meta:
+      blockchain: near
+      sector: tokens
+      project: tokens_near_fungible
+      contributors: danzipie
+    config:
+      tags: ['table', 'metadata', 'fungible', 'near']
+    description: "Fungible Token Addresses, Name, Symbols and Decimals"
+    columns:
+      - name: blockchain
+        description: "Name of the blockchain"
+      - name: contract_account_id
+        description: "Token account ID"
+      - name: name
+        description: "Token name"
+      - name: symbol
+        description: "Token symbol"
+      - name: decimals
+        description: "Number of decimals"
